@@ -2,6 +2,8 @@
 
 A Terraform module to create an Amazon Certificate Manager (ACM) certificate with Route 53 DNS validation.
 
+**Note: You will need to apply thesed changes multiple times for Terraform to see and verify the records**
+
 ## Usage
 
 ```hcl
