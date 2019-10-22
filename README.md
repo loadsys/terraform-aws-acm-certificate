@@ -2,6 +2,8 @@
 
 A Terraform module to create an Amazon Certificate Manager (ACM) certificate with Route 53 DNS validation.
 
+**Note: You will need to apply thesed changes multiple times for Terraform to see and verify the records**
+
 ## Usage
 
 ```hcl
@@ -20,7 +22,7 @@ resource "aws_route53_zone" "default" {
 }
 
 module "cert" {
-  source = "github.com/azavea/terraform-aws-acm-certificate?ref=1.0.0"
+  source = "github.com/azavea/terraform-aws-acm-certificate?ref=1.1.0"
 
   providers = {
     aws.acm_account     = "aws.certificates"
